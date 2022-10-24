@@ -1,8 +1,8 @@
 :root {
   /* Define variables */
-  --color-dark: ;
-  --color-gray: ;
-  --color-light: #fff;
+  --color-dark: #291F1E;
+  --color-gray: #dfdfdc;
+  --color-light: #F8F4F9;
 }
 
 /* resets */
@@ -10,6 +10,14 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+}
+
+li,
+a {
+  font-size: 1.6rem;
+  color: var(--color-dark);
+  text-decoration: none;
+  list-style-type: none;
 }
 
 /* Base styles */

@@ -1,8 +1,25 @@
-import React from 'react'
+import i4g from '../../assets/i4G.svg'
+import zuri from '../../assets/Vector.svg'
+
+import Styles from './Footer.module.css'
 
 const Footer = () => {
     return (
-        <div>Footer</div>
+        <footer>
+
+            <ul className={Styles.container}>
+                <li className="li">
+                    <img src={zuri} alt="zuri" />
+                </li>
+                <li className="li">
+                    <p>HNG Internship 9 Frontend Task</p>
+                </li>
+                <li className="li">
+                    <img src={i4g} alt="i4g" />
+                </li>
+            </ul>
+
+        </footer>
     )
 }
 
