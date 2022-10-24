@@ -5,10 +5,12 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    max-width: 80rem;
+    padding: 2rem;
+    margin: 0 auto;
 }
 
-#slack {
+.linkitem:nth-child(2) {
     display: none;
 }
 
@@ -19,7 +21,7 @@
 .listItem {
     display: inline-block;
     padding: 2rem 4rem;
-    width: 70%;
+    width: 100%;
     border-radius: 0.5rem;
     font-weight: bold;
     background-color: var(--color-gray);

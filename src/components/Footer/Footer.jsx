@@ -5,15 +5,15 @@ import Styles from './Footer.module.css'
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className={Styles.footer}>
             <ul className={Styles.container}>
-                <li className="li">
+                <li className={Styles.listitem}>
                     <img src={zuri} alt="zuri" />
                 </li>
-                <li className="li">
+                <li className={Styles.listitem}>
                     <p>HNG Internship 9 Frontend Task</p>
                 </li>
-                <li className="li">
+                <li className={Styles.listitem}>
                     <img src={i4g} alt="i4g" />
                 </li>
             </ul>
