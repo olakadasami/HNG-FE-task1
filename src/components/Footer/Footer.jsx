@@ -6,7 +6,6 @@ import Styles from './Footer.module.css'
 const Footer = () => {
     return (
         <footer>
-
             <ul className={Styles.container}>
                 <li className="li">
                     <img src={zuri} alt="zuri" />
@@ -18,7 +17,6 @@ const Footer = () => {
                     <img src={i4g} alt="i4g" />
                 </li>
             </ul>
-
         </footer>
     )
 }
