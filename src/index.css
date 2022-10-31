@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 :root {
   /* Define variables */
   --color-dark: #291F1E;
@@ -32,4 +34,5 @@ body {
   font-size: 1.6rem;
   color: var(--color-dark);
   background-color: var(--color-light);
+  font-family: Poppins, sans-serif;
 }

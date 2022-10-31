@@ -20,23 +20,27 @@ const Links = () => {
         {
             href: "http://books.zuri.team/",
             title: "Zuri Books",
-            id: 'books'
+            id: 'books',
+            subtext: ''
         },
         {
-            href: "https://books.zuri.team/python-for-beginners?ref_id=<yourslackname>",
+            href: "https://books.zuri.team/python-for-beginners?ref_id=olakadasami55",
             title: "Python Books",
-            id: 'book__python'
+            id: 'book__python',
+            subtext: ''
         },
         {
             href: "https://background.zuri.team/",
             title: "Background Check for Coders",
-            id: 'pitch'
+            id: 'pitch',
+            subtext: ''
         },
         {
             href: "https://books.zuri.team/design-rules",
             title: "Design Books",
-            id: 'book__design'
-        },
+            id: 'book__design',
+            subtext: ''
+        }
     ]
     return (
         <section className={Styles.links}>

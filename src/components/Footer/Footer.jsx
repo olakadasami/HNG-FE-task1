@@ -1,4 +1,4 @@
-import i4g from '../../assets/i4G.svg'
+import i4g from '../../assets/I4G.svg'
 import zuri from '../../assets/Vector.svg'
 
 import Styles from './Footer.module.css'
