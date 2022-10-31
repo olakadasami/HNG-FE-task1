@@ -54,8 +54,6 @@ const Links = () => {
 
             <Social />
 
-            <a id="some_id" title="some title">anything</a>
-
         </section>
     )
 }
