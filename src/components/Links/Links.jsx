@@ -54,6 +54,8 @@ const Links = () => {
 
             <Social />
 
+            <a id="some_id" title="some title">anything</a>
+
         </section>
     )
 }
@@ -63,13 +65,8 @@ export default Links
 const LinkItem = ({ item }) => {
     return (
         <li className={Styles.linkitem}>
-            <a className={Styles.listItem} target='_blank' href={item.href} id={item.id}>
-                <h4>
-                    {item.title}
-                </h4>
-                <p>
-                    {item.subtext}
-                </p>
+            <a className={Styles.listItem} title={item.subtext} target='_blank' href={item.href} id={item.id}>
+                {item.title}
             </a>
         </li>
     )
