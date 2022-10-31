@@ -1,15 +1,16 @@
 import Styles from './Links.module.css'
+import Social from './Social'
 
 const Links = () => {
     const items = [
         {
-            href: "twitter.com",
+            href: "https://twitter.com/olaks_codes",
             title: "Twitter Link",
             id: 'twitter'
         },
         {
             href: "slack.com",
-            title: "Slack username",
+            title: "olakadasami55",
             id: 'slack'
         },
         {
@@ -21,7 +22,7 @@ const Links = () => {
             href: "http://books.zuri.team/",
             title: "Zuri Books",
             id: 'books',
-            subtext: ''
+            subtext: 'Hello'
         },
         {
             href: "https://books.zuri.team/python-for-beginners?ref_id=olakadasami55",
@@ -51,6 +52,8 @@ const Links = () => {
                 ))}
             </ul>
 
+            <Social />
+
         </section>
     )
 }
@@ -60,8 +63,13 @@ export default Links
 const LinkItem = ({ item }) => {
     return (
         <li className={Styles.linkitem}>
-            <a className={Styles.listItem} href={item.href} id={item.id}>
-                {item.title}
+            <a className={Styles.listItem} target='_blank' href={item.href} id={item.id}>
+                <h4>
+                    {item.title}
+                </h4>
+                <p>
+                    {item.subtext}
+                </p>
             </a>
         </li>
     )
