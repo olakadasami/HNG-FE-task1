@@ -22,7 +22,7 @@ const Links = () => {
             href: "http://books.zuri.team/",
             title: "Zuri Books",
             id: 'books',
-            subtext: 'Hello'
+            subtext: 'Want to be developer/designer? Check out these books'
         },
         {
             href: "https://books.zuri.team/python-for-beginners?ref_id=olakadasami55",

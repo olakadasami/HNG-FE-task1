@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className={Styles.header}>
             <div className={Styles.image}>
-                <img src={profilePicture} alt="profile picture" />
+                <img id='profile_img' src={profilePicture} alt="profile picture" />
             </div>
 
             <h2 className={Styles.text}>
