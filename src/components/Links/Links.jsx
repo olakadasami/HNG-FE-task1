@@ -28,19 +28,19 @@ const Links = () => {
             href: "https://books.zuri.team/python-for-beginners?ref_id=olakadasami55",
             title: "Python Books",
             id: 'book__python',
-            subtext: ''
+            subtext: 'Python, from beginner to senior developer'
         },
         {
             href: "https://background.zuri.team/",
             title: "Background Check for Coders",
             id: 'pitch',
-            subtext: ''
+            subtext: 'Get realiable information on the background of coders/programmers'
         },
         {
             href: "https://books.zuri.team/design-rules",
             title: "Design Books",
             id: 'book__design',
-            subtext: ''
+            subtext: 'Your last stop design book, go from beginner to an advanced designer'
         }
     ]
     return (
