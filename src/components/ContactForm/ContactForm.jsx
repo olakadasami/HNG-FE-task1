@@ -25,7 +25,16 @@ const ContactForm = () => {
     ]
 
     return (
-        <div>
+        <form>
+            <div className="heading">
+                <h2>
+                    Contact Me
+                </h2>
+                <p className="pages">
+                    Hi there, contact me to ask me about anything you have in mind.
+                </p>
+            </div>
+
             {inputElements.map((item, index) => (
                 <InputElement item={item} key={index} />
             ))}
@@ -50,7 +59,7 @@ const ContactForm = () => {
             <button type='submit' id='btn__submit'>
                 Send message
             </button>
-        </div>
+        </form>
     )
 }
 
