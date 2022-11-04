@@ -1,4 +1,5 @@
 import InputElement from './InputElement/InputElement'
+import Styles from './ContactForm.module.css'
 
 const ContactForm = () => {
 
@@ -25,8 +26,8 @@ const ContactForm = () => {
     ]
 
     return (
-        <form>
-            <div className="heading">
+        <form className={Styles.form}>
+            <div className={Styles.heading}>
                 <h2>
                     Contact Me
                 </h2>
@@ -35,11 +36,13 @@ const ContactForm = () => {
                 </p>
             </div>
 
-            {inputElements.map((item, index) => (
-                <InputElement item={item} key={index} />
-            ))}
+            <div className={Styles.inputTextGroup}>
+                {inputElements.map((item, index) => (
+                    <InputElement styles={Styles.inputElement} item={item} key={index} />
+                ))}
 
-            <div>
+            </div>
+            <div className={Styles.inputElement}>
                 <label htmlFor="message">
                     Message
                 </label>
@@ -49,7 +52,7 @@ const ContactForm = () => {
                 />
             </div>
 
-            <div>
+            <div className={Styles.check}>
                 <input type="checkbox" id="confirm" />
                 <label htmlFor="confirm">
                     You agree to providing your data to {name} who may contact you.

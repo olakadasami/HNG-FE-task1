@@ -36,3 +36,8 @@ body {
   background-color: var(--color-light);
   font-family: Inter, sans-serif;
 }
+
+label {
+  font-size: 1.4rem;
+  color: #344054;
+}

@@ -1,6 +1,6 @@
-const InputElement = ({ item }) => {
+const InputElement = ({ item, styles }) => {
     return (
-        <div>
+        <div className={styles}>
             <label htmlFor={item.id}>
                 {item.label}
             </label>
