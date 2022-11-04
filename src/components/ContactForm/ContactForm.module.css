@@ -4,7 +4,7 @@
     gap: 2.4rem;
     max-width: 76rem;
     margin: 0 auto;
-    padding: 10rem 4rem 0 4rem;
+    padding: 6.4rem 2rem 0 2rem;
 }
 
 .heading h2 {
@@ -26,24 +26,14 @@
 
 .inputTextGroup {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     gap: 2rem;
 }
 
-.inputTextGroup .inputElement:nth-child(1) {
-    width: 47%;
-}
-
-.inputTextGroup .inputElement:nth-child(2) {
-    width: 47%;
-
-}
-
-.inputTextGroup .inputElement:nth-child(3) {
+/* .inputTextGroup > * {
     width: 100%;
-}
+} */
+
 
 .inputElement input,
 .inputElement textarea {
@@ -74,4 +64,40 @@
     font-weight: 600;
     font-size: 1.6rem;
     text-align: center;
+}
+
+/* small screens */
+@media screen and (min-width: 480px) {
+    .form {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* large screens */
+@media screen and (min-width: 840px) {
+
+    .form {
+        padding-top: 10rem;
+    }
+
+    .inputTextGroup {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .inputTextGroup .inputElement:nth-child(1) {
+        width: 47%;
+    }
+
+    .inputTextGroup .inputElement:nth-child(2) {
+        width: 47%;
+
+    }
+
+    .inputTextGroup .inputElement:nth-child(3) {
+        width: 100%;
+    }
 }
