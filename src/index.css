@@ -2,10 +2,10 @@
 
 :root {
   /* Define variables */
-  --color-dark: #291F1E;
-  --color-gray: #dfdfdc;
-  --color-grey: #636363;
-  --color-light: #F8F4F9;
+  --color-dark: #101828;
+  --color-gray: #EAECF0;
+  --color-grey: #667085;
+  --color-light: #FFFFFF;
 }
 
 /* resets */
@@ -34,5 +34,5 @@ body {
   font-size: 1.6rem;
   color: var(--color-dark);
   background-color: var(--color-light);
-  font-family: Poppins, sans-serif;
+  font-family: Inter, sans-serif;
 }
