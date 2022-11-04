@@ -59,7 +59,7 @@ const ContactForm = () => {
                 </label>
             </div>
 
-            <button type='submit' id='btn__submit'>
+            <button className={Styles.button} type='submit' id='btn__submit'>
                 Send message
             </button>
         </form>
