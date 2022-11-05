@@ -11,7 +11,7 @@ const InputElement = ({ item, styles }) => {
                 onChange={(e) => item.set(e.target.value)}
                 type={item.inputType}
                 placeholder={item.placeholder}
-
+                required
             />
         </div>
     )
