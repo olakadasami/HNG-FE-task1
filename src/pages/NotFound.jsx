@@ -1,7 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import Styles from './NotFound.module.css'
 
 const NotFound = () => {
+
+    const navigate = useNavigate()
     return (
         <div className={Styles.container}>
             <div className={Styles.group}>
@@ -15,12 +17,17 @@ const NotFound = () => {
                     Sorry, the page you are looking for doesn't exist.
                 </p>
                 <div className={Styles.btnGroup}>
-                    <a href="" className={Styles.btnWhite}>
-                        Go back
-                    </a>
-                    <Link to="/" className={Styles.btnBlue}>
+                    <div
+                        onClick={() => navigate(-1)}
+                        className={Styles.btnWhite}>
+                        &larr;
+                        <p>Go back</p>
+                    </div>
+                    <div
+                        onClick={() => navigate('/')}
+                        className={Styles.btnBlue}>
                         Take me home
-                    </Link>
+                    </div>
                 </div>
             </div>
         </div>
