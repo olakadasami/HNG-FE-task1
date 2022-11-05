@@ -41,3 +41,7 @@ label {
   font-size: 1.4rem;
   color: #344054;
 }
+
+::placeholder {
+  font-family: Inter, sans-serif;
+}

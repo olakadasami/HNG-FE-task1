@@ -55,7 +55,7 @@ const ContactForm = () => {
             <div className={Styles.check}>
                 <input type="checkbox" id="confirm" />
                 <label htmlFor="confirm">
-                    You agree to providing your data to {name} who may contact you.
+                    You agree to providing your data to Olakada Samuel who may contact you.
                 </label>
             </div>
 
