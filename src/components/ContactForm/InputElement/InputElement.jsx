@@ -1,3 +1,4 @@
+
 const InputElement = ({ item, styles }) => {
     return (
         <div className={styles}>
@@ -6,8 +7,11 @@ const InputElement = ({ item, styles }) => {
             </label>
             <input
                 id={item.id}
+                value={item.state}
+                onChange={(e) => item.set(e.target.value)}
                 type={item.inputType}
                 placeholder={item.placeholder}
+
             />
         </div>
     )
