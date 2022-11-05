@@ -13,11 +13,11 @@ const NotFound = () => {
             <p className={Styles.paragraph}>
                 Sorry, the page you are looking for doesn't exist.
             </p>
-            <div className="btngrou">
-                <a href="" className="btngrou">
+            <div className={Styles.btnGroup}>
+                <a href="" className={Styles.btnWhite}>
                     Go back
                 </a>
-                <Link href="" className="btngrou">
+                <Link to="/" className={Styles.btnBlue}>
                     Take me home
                 </Link>
             </div>
