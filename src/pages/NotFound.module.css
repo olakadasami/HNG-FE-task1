@@ -1,9 +1,10 @@
 .container {
     max-width: 1000px;
     padding: 2rem;
-    padding-top: 10rem;
     margin: 0 auto;
-    height: 70vh;
+    height: 75vh;
+    display: flex;
+    align-items: center;
 }
 
 .headingSmall {
@@ -14,7 +15,7 @@
 
 .headingBig {
     margin-bottom: 2.4rem;
-    font-size: 6rem;
+    font-size: 3.6rem;
 }
 
 .paragraph {
@@ -25,26 +26,76 @@
 .btnGroup {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
     gap: 1.2rem;
 }
 
-.btnWhite {
-    padding: 1.6rem 3.3rem;
+.btnWhite,
+.btnBlue {
+    padding: 1.2rem 2rem;
     box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.25);
     border-radius: 8px;
     transition: all .3s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+}
+
+.btnWhite {
+    color: inherit;
 }
 
 .btnBlue {
     background-color: #1570EF;
-    padding: 1.6rem 3.3rem;
-    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.25);
-    border-radius: 8px;
     color: #fff;
-    transition: all .3s;
 }
 
 .btnBlue:hover,
 .btnWhite:hover {
     box-shadow: 0px 1px 4px rgba(16, 24, 40, 0.25);
+}
+
+/* Small screens */
+@media screen and (min-width: 480px) {
+    .container {
+        padding: 4rem;
+    }
+
+    .headingBig {
+        font-size: 4.8rem;
+    }
+}
+
+/* medium screens */
+@media screen and (min-width: 720px) {
+    .container {
+        padding: 6rem;
+    }
+
+    .btnBlue,
+    .btnWhite {
+        padding: 1.6rem 2.8rem;
+        width: fit-content;
+    }
+
+    .btnGroup {
+        flex-direction: row;
+    }
+
+    .headingBig {
+        font-size: 5.2rem;
+    }
+}
+
+/* large Screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 8rem;
+    }
+
+    .headingBig {
+        font-size: 6rem;
+    }
 }
